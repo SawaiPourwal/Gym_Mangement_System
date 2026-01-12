@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == \"Completed\"",
+ "creation": "2026-01-09 16:46:29.354053",
+ "days_in_advance": 3,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Subscription",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hi {{ doc.party }},\n\nYour gym membership will expired {{ doc.end_date }}.\n\nPlease renew to continue your fitness journey.\n\n\u2013 Gym Team",
+ "message_type": "Markdown",
+ "modified": "2026-01-09 16:46:29.354053",
+ "modified_by": "Administrator",
+ "module": "gym",
+ "name": "Membership Expiry",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "custom_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "sawai kumawat",
+ "sender_email": "sawai.k.solufy@gmail.com",
+ "subject": "Your Gym Membership Has Expired",
+ "value_changed": "end_date"
+}

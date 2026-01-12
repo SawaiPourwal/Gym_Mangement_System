@@ -1,0 +1,292 @@
+{
+ "Customer": [
+  {
+   "dt": "Customer",
+   "fetch_from": "opportunity_name.custom_interested_plan",
+   "fieldname": "custom_subscription_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "insert_after": "custom__subscription_end_date",
+   "label": "Subscription Type",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_plan_histroy",
+   "fieldtype": "Table",
+   "insert_after": "custom_plan_details",
+   "label": "Plan Histroy",
+   "module": "gym",
+   "options": "Plan History Details"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_plan_details",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_current_amount",
+   "label": "Plan details",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fetch_from": "custom_current_plans.cost",
+   "fieldname": "custom_current_amount",
+   "fieldtype": "Currency",
+   "insert_after": "custom_current_plans",
+   "label": "Current Amount",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fetch_from": "custom_interested_plan.plan_name",
+   "fieldname": "custom_current_plans",
+   "fieldtype": "Link",
+   "insert_after": "custom_current_plan_",
+   "label": "Current Plans",
+   "module": "gym",
+   "options": "Subscription Plan"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_current_plan_",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_plan_and_history",
+   "label": "Current Plan ",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom__subscription_end_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "insert_after": "custom_join_date",
+   "label": " Subscription End Date",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fetch_from": "lead_name.source",
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "insert_after": "custom_column_break_mtejn",
+   "label": "Source",
+   "module": "gym",
+   "options": "Lead Source"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_column_break_mtejn",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_interested_plan",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_plan_and_history",
+   "fieldtype": "Tab Break",
+   "insert_after": "custom_trainer_assigned_date",
+   "label": "Plan History",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_trainer_assigned_date",
+   "fieldtype": "Date",
+   "insert_after": "custom_assigned_trainer",
+   "label": "Trainer Assigned Date",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_assigned_trainer",
+   "fieldtype": "Link",
+   "insert_after": "custom_trainer",
+   "label": "Assigned Trainer",
+   "module": "gym",
+   "options": "Employee"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_trainer",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_tab_11",
+   "label": "Trainer",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_tab_11",
+   "fieldtype": "Tab Break",
+   "insert_after": "custom_doctor_advicenotes",
+   "label": "Trainer ",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_medical_issue ==1",
+   "dt": "Customer",
+   "fetch_from": "lead_name.custom_doctor_advicenotes",
+   "fieldname": "custom_doctor_advicenotes",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_medical_condition",
+   "label": "Doctor Advice/Notes",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_medical_issue ==1",
+   "dt": "Customer",
+   "fetch_from": "lead_name.custom_medical_condition",
+   "fieldname": "custom_medical_condition",
+   "fieldtype": "Select",
+   "insert_after": "custom_medical_issue",
+   "label": "Medical Condition",
+   "module": "gym",
+   "options": "\nBP\nDiabetes\nHeart Problem\nAsthma\nThyroid\nBack Pain\nKnee Pain\nOther"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_medical_issue",
+   "fieldtype": "Check",
+   "insert_after": "custom_medical__safety",
+   "label": "Medical Issue",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_medical__safety",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_workout_experience",
+   "label": "Medical & Safety",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_fitness_profile",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_tab_10",
+   "label": "Fitness Profile",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_tab_10",
+   "fieldtype": "Tab Break",
+   "insert_after": "custom_subscription_type",
+   "label": "Fitness & Medical Info",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_join_date",
+   "fieldtype": "Date",
+   "insert_after": "custom_active_subscription",
+   "label": "Subscription Start Date",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_active_subscription",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "insert_after": "custom_membership",
+   "label": " Subscription",
+   "module": "gym",
+   "options": "Subscription"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_membership",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_tab_9",
+   "label": "Membership",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fetch_from": "lead_name.custom_date_of_birth",
+   "fieldname": "custom_date_of_birth",
+   "fieldtype": "Date",
+   "insert_after": "gender",
+   "label": "Date of Birth",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_interested_plan",
+   "fieldtype": "Link",
+   "insert_after": "custom_lead_source",
+   "label": "Interested Plan",
+   "module": "gym",
+   "options": "Subscription Plan"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_workout_experience",
+   "fieldtype": "Select",
+   "insert_after": "custom_preferred_time_slot",
+   "label": "Workout Experience",
+   "module": "gym",
+   "options": "\nBeginner\nIntermediate\nAdvanced"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_preferred_time_slot",
+   "fieldtype": "Select",
+   "insert_after": "custom_fitness_goal",
+   "label": "Preferred Time Slot",
+   "module": "gym",
+   "options": "\nMorning\nAfternoon\nEvening\nFlexible"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_tab_9",
+   "fieldtype": "Tab Break",
+   "insert_after": "last_name",
+   "label": "Subscription Plan",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_lead_source",
+   "fieldtype": "Section Break",
+   "insert_after": "image",
+   "label": "Lead Source",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_age",
+   "fieldtype": "Int",
+   "insert_after": "custom_date_of_birth",
+   "label": "Age",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "insert_after": "custom_demo_status",
+   "label": "Email",
+   "module": "gym"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_demo_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "insert_after": "salutation",
+   "label": "Demo Status",
+   "module": "gym",
+   "options": "Pending\nRunning\nCompleted"
+  },
+  {
+   "dt": "Customer",
+   "fieldname": "custom_fitness_goal",
+   "fieldtype": "Select",
+   "insert_after": "custom_fitness_profile",
+   "label": "Fitness Goal",
+   "module": "gym",
+   "options": "\nWeight Loss\nMuscle Gain\nFitness\n"
+  }
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "Customer": [
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "disabled",
+   "module": "gym",
+   "property": "default",
+   "property_type": "Text",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "gender",
+   "module": "gym",
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "lead_name.gender"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "gender",
+   "module": "gym",
+   "property": "depends_on",
+   "property_type": "Data",
+   "value": "// eval:doc.customer_type != 'Company'"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocType",
+   "module": "gym",
+   "property": "field_order",
+   "property_type": "Data",
+   "value": "[\"basic_info\", \"customer_name\", \"customer_type\", \"customer_group\", \"opportunity_name\", \"account_manager\", \"naming_series\", \"salutation\", \"custom_demo_status\", \"custom_email\", \"column_break0\", \"gender\", \"custom_date_of_birth\", \"custom_age\", \"lead_name\", \"prospect_name\", \"territory\", \"image\", \"custom_lead_source\", \"custom_interested_plan\", \"custom_column_break_mtejn\", \"source\", \"defaults_tab\", \"default_currency\", \"default_bank_account\", \"column_break_14\", \"default_price_list\", \"internal_customer_section\", \"is_internal_customer\", \"represents_company\", \"column_break_70\", \"companies\", \"more_info\", \"market_segment\", \"industry\", \"customer_pos_id\", \"website\", \"language\", \"column_break_45\", \"customer_details\", \"dashboard_tab\", \"contact_and_address_tab\", \"address_contacts\", \"address_html\", \"column_break1\", \"contact_html\", \"primary_address_and_contact_detail\", \"column_break_26\", \"customer_primary_address\", \"primary_address\", \"column_break_nwor\", \"customer_primary_contact\", \"mobile_no\", \"email_id\", \"first_name\", \"last_name\", \"custom_tab_9\", \"custom_membership\", \"custom_active_subscription\", \"custom_join_date\", \"custom__subscription_end_date\", \"custom_subscription_type\", \"custom_tab_10\", \"custom_fitness_profile\", \"custom_fitness_goal\", \"custom_preferred_time_slot\", \"custom_workout_experience\", \"custom_medical__safety\", \"custom_medical_issue\", \"custom_medical_condition\", \"custom_doctor_advicenotes\", \"custom_tab_11\", \"custom_trainer\", \"custom_assigned_trainer\", \"custom_trainer_assigned_date\", \"custom_plan_and_history\", \"custom_current_plan_\", \"custom_current_plans\", \"custom_current_amount\", \"custom_plan_details\", \"custom_plan_histroy\", \"tax_tab\", \"taxation_section\", \"tax_id\", \"column_break_21\", \"tax_category\", \"tax_withholding_category\", \"accounting_tab\", \"credit_limit_section\", \"payment_terms\", \"credit_limits\", \"default_receivable_accounts\", \"accounts\", \"loyalty_points_tab\", \"loyalty_program\", \"column_break_54\", \"loyalty_program_tier\", \"sales_team_tab\", \"sales_team\", \"sales_team_section\", \"default_sales_partner\", \"column_break_66\", \"default_commission_rate\", \"settings_tab\", \"so_required\", \"dn_required\", \"column_break_53\", \"is_frozen\", \"disabled\", \"portal_users_tab\", \"portal_users\"]"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "naming_series",
+   "module": "gym",
+   "property": "options",
+   "property_type": "Text",
+   "value": "CUST-.YYYY.-"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "customer_primary_contact",
+   "module": "gym",
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "lead_name.mobile_no"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "customer_primary_address",
+   "module": "gym",
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "lead_name.custom_address"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "more_info",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "internal_customer_section",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "defaults_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "sales_team_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "accounting_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "tax_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "territory",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "salutation",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "basic_info",
+   "module": "gym",
+   "property": "label",
+   "property_type": "Data",
+   "value": "Persionl Details"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "naming_series",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Customer",
+   "doctype_or_field": "DocField",
+   "field_name": "naming_series",
+   "module": "gym",
+   "property": "reqd",
+   "property_type": "Check",
+   "value": "0"
+  }
+ ]
+}

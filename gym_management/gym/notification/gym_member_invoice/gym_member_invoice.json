@@ -1,0 +1,32 @@
+{
+ "attach_files": "",
+ "attach_print": 1,
+ "channel": "Email",
+ "creation": "2026-01-09 16:53:48.118678",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Sales Invoice",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hello {{ doc.party }},<br><br>\n\nYour gym membership invoice has been generated.<br><br>\n\n<b>Invoice No:</b> {{ doc.name }}<br>\n<b>Amount:</b> \u20b9{{ doc.grand_total }}<br>\n<b>Due Date:</b> {{ doc.due_date }}<br><br>\n\nPlease complete the payment to activate your membership.<br><br>\n\nRegards,<br>\nGym Team\n",
+ "message_type": "Markdown",
+ "modified": "2026-01-09 16:53:48.118678",
+ "modified_by": "Administrator",
+ "module": "gym",
+ "name": "Gym Member Invoice",
+ "owner": "Administrator",
+ "print_format": "Sales Invoice Print",
+ "recipients": [
+  {
+   "receiver_by_document_field": "contact_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "sawai kumawat",
+ "sender_email": "sawai.k.solufy@gmail.com",
+ "subject": "Your Gym Invoice {{ doc.name }}"
+}

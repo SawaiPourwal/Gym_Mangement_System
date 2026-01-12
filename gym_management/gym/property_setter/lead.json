@@ -1,0 +1,372 @@
+{
+ "Lead": [
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocType",
+   "module": "gym",
+   "property": "field_order",
+   "property_type": "Data",
+   "value": "[\"custom_personal_details__contact\", \"custom_persnal_details\", \"first_name\", \"last_name\", \"lead_name\", \"naming_series\", \"salutation\", \"middle_name\", \"column_break_1\", \"gender\", \"custom_date_of_birth\", \"custom_age\", \"job_title\", \"col_break123\", \"status\", \"lead_owner\", \"customer\", \"type\", \"request_type\", \"address_section\", \"custom_column_break_fyfhr\", \"mobile_no\", \"whatsapp_no\", \"address_html\", \"column_break_38\", \"email_id\", \"custom_address\", \"whatsapp\", \"city\", \"state\", \"country\", \"column_break2\", \"contact_html\", \"organization_section\", \"company_name\", \"no_of_employees\", \"column_break_28\", \"annual_revenue\", \"industry\", \"market_segment\", \"column_break_31\", \"territory\", \"fax\", \"qualification_tab\", \"qualification_status\", \"column_break_64\", \"qualified_by\", \"qualified_on\", \"other_info_tab\", \"campaign_name\", \"company\", \"column_break_22\", \"language\", \"image\", \"title\", \"column_break_50\", \"disabled\", \"unsubscribed\", \"blog_subscriber\", \"custom_lead_source__fitness_interest\", \"contact_info_tab\", \"custom_inquiry_date_\", \"custom_preferred_time_slot\", \"source\", \"custom_refrred_by\", \"custom_demo_status\", \"website\", \"column_break_qkpa\", \"custom_fitness_goal\", \"custom_workout_experience\", \"custom_interested_plan\", \"custom_plan_price\", \"custom_fitness_interested\", \"column_break_16\", \"phone\", \"phone_ext\", \"custom_column_break_bmxvr\", \"column_break_20\", \"custom_trial_demo\", \"custom_trial_details\", \"custom_trial_required\", \"custom_trial_start_date\", \"custom_trial_end_date\", \"custom_trial_feedback\", \"custom_column_break_qhobo\", \"custom_trail_type\", \"custom_trial_trainer\", \"custom_medical__safety\", \"custom_medical_info\", \"custom_medical_issue\", \"custom_medical_condition\", \"custom_injury_history\", \"custom_doctor_advicenotes\", \"activities_tab\", \"custom_section_break_zkug0\", \"open_activities_html\", \"all_activities_section\", \"all_activities_html\", \"notes_tab\", \"notes_html\", \"notes\", \"dashboard_tab\"]"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "column_break_16",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "dashboard_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "contact_info_tab",
+   "module": "gym",
+   "property": "label",
+   "property_type": "Data",
+   "value": "Lead Source"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "organization_section",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "address_section",
+   "module": "gym",
+   "property": "label",
+   "property_type": "Data",
+   "value": "Contact Info"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "organization_section",
+   "module": "gym",
+   "property": "label",
+   "property_type": "Data",
+   "value": "Interested Plan Section"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "source",
+   "module": "gym",
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "customer.custom_source"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "gender",
+   "module": "gym",
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "customer.gender"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "mobile_no",
+   "module": "gym",
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "custom_address.phone"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "status",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "notes_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "activities_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "phone",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "type",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "lead_owner",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "middle_name",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "salutation",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "other_info_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "qualification_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "address_html",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "naming_series",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "blog_subscriber",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "unsubscribed",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "disabled",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "company",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "contact_html",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "country",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "state",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "city",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "fax",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "territory",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "market_segment",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "industry",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "annual_revenue",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "no_of_employees",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "company_name",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "phone_ext",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "website",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "request_type",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Lead",
+   "doctype_or_field": "DocField",
+   "field_name": "job_title",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  }
+ ]
+}

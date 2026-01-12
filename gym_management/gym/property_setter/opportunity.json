@@ -1,0 +1,192 @@
+{
+ "Opportunity": [
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocType",
+   "module": "gym",
+   "property": "field_order",
+   "property_type": "Data",
+   "value": "[\"custom_customer__lead_\", \"custom_persional_info__lead\", \"opportunity_from\", \"customer_name\", \"party_name\", \"opportunity_type\", \"source\", \"custom_column_break_sddny\", \"contact_mobile\", \"whatsapp\", \"contact_email\", \"status\", \"naming_series\", \"custom_section_break_zrtvi\", \"custom_column_break_nftv3\", \"column_break_10\", \"probability\", \"custom_fitness_goal\", \"custom_workout_experience\", \"custom_preferred_time_slot\", \"custom_medical_issue\", \"email_id\", \"custom_age\", \"custom_address\", \"custom_mobile_no\", \"column_break0\", \"opportunity_owner\", \"expected_closing\", \"sales_stage\", \"organization_details_section\", \"no_of_employees\", \"annual_revenue\", \"customer_group\", \"column_break_23\", \"industry\", \"market_segment\", \"website\", \"column_break_31\", \"city\", \"state\", \"country\", \"territory\", \"section_break_14\", \"currency\", \"column_break_36\", \"conversion_rate\", \"column_break_17\", \"opportunity_amount\", \"base_opportunity_amount\", \"more_info\", \"company\", \"campaign\", \"transaction_date\", \"column_break1\", \"language\", \"amended_from\", \"title\", \"first_response_time\", \"lost_detail_section\", \"lost_reasons\", \"order_lost_reason\", \"column_break_56\", \"competitors\", \"contact_info\", \"custom_interset_plan\", \"custom_interested_plan\", \"custom_plan_price\", \"primary_contact_section\", \"contact_person\", \"job_title\", \"column_break_54\", \"column_break_22\", \"phone\", \"phone_ext\", \"address_contact_section\", \"address_html\", \"customer_address\", \"address_display\", \"column_break3\", \"contact_html\", \"contact_display\", \"items_section\", \"items\", \"section_break_32\", \"base_total\", \"column_break_33\", \"total\", \"activities_tab\", \"open_activities_html\", \"all_activities_section\", \"all_activities_html\", \"notes_tab\", \"notes_html\", \"notes\", \"dashboard_tab\"]"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "whatsapp",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "whatsapp",
+   "module": "gym",
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "amended_from.whatsapp"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "column_break0",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "column_break_10",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "dashboard_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "notes_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "activities_tab",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "items_section",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "address_contact_section",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "primary_contact_section",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "contact_info",
+   "module": "gym",
+   "property": "label",
+   "property_type": "Data",
+   "value": "Plan & Pricing"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "customer_name",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "0"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "lost_detail_section",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "more_info",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "section_break_14",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "organization_details_section",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "probability",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "expected_closing",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "sales_stage",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Opportunity",
+   "doctype_or_field": "DocField",
+   "field_name": "opportunity_owner",
+   "module": "gym",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-01-02 13:09:02.577861",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Subscription",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Hello {{doc.party}},</p>\n\n<p>Your gym subscription {{frappe.db.get_value(\"Subscription Plan Detail\",{\"parent\":doc.name},'plan')}} has been successfully activated.</p>\n\n<p>Start Date: {{doc.start_date}}\nEnd Date: {{doc.end_date}}</p>\n\n<p>Welcome to our gym </p>\n\n<p>Regards,\nGym Team</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-01-09 18:10:31.394682",
+ "modified_by": "Administrator",
+ "module": "gym",
+ "name": "shivangi",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "custom_email",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "sawai kumawat",
+ "sender_email": "sawai.k.solufy@gmail.com",
+ "subject": "Your gym membership is activated",
+ "value_changed": "status"
+}

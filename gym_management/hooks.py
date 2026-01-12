@@ -7,7 +7,8 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
+after_migrate = "gym_management.migrate.after_migrate"
+fixtures=["Translation"]
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
@@ -26,6 +27,8 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/gym_management/css/gym_management.css"
+# app_include_css = "/assets/gym_management/css/custom.css"
+
 # app_include_js = "/assets/gym_management/js/gym_management.js"
 
 # include js, css files in header of web template
@@ -47,6 +50,14 @@ app_license = "mit"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
+doctype_js = {
+    "Customer": "gym/customization/customer/customer.js",
+    "Sales Invoice": "gym/customization/sales_invoice/sales_invoice.js",
+    "Lead" : "gym/customization/lead/lead.js",
+    "Subscription": "gym/customization/subscription/subscription.js"
+}
+
 
 # Svg Icons
 # ------------------
@@ -137,13 +148,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+   "Subscription": {
+       "on_update": "gym_management.gym.customization.subscription.subscription.on_update"
+   }
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+}
 
 # Scheduled Tasks
 # ---------------

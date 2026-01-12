@@ -1,0 +1,241 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-17 17:32:29.238666",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "customer",
+  "subscription",
+  "subscription_start_date",
+  "trainer",
+  "tab_2_tab",
+  "measurement_history_section",
+  "date",
+  "height",
+  "weight",
+  "bmi",
+  "body_fat",
+  "notes",
+  "workout_plan_tab",
+  "workout_section",
+  "workout_plan_start_date",
+  "workout_days",
+  "column_break_cruh",
+  "workout_goal",
+  "workout_level",
+  "workout_exercise_section",
+  "exercises",
+  "diet_plan_tab",
+  "diet_section",
+  "diet_start_date",
+  "diet_end_date",
+  "diet_item",
+  "supplements_protein_tab",
+  "buy_protein_section",
+  "need_protein",
+  "protein_items_section",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer ",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "subscription",
+   "fieldtype": "Link",
+   "label": "Subscription",
+   "options": "Subscription"
+  },
+  {
+   "fieldname": "subscription_start_date",
+   "fieldtype": "Date",
+   "label": "Subscription Start Date"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Measurement History"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "bmi",
+   "fieldtype": "Float",
+   "label": "BMI"
+  },
+  {
+   "fieldname": "body_fat",
+   "fieldtype": "Float",
+   "label": "Body Fat"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "workout_plan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Workout Plan"
+  },
+  {
+   "fieldname": "workout_goal",
+   "fieldtype": "Select",
+   "label": "Workout Goal",
+   "options": "\nMuscle Gain\nWeight Loss\nStrength\nEndurance\nFlexibility\nGeneral Fitness"
+  },
+  {
+   "fieldname": "workout_level",
+   "fieldtype": "Select",
+   "label": "Workout Level",
+   "options": "\nBeginner\nIntermediate\nAdvanced"
+  },
+  {
+   "fieldname": "workout_days",
+   "fieldtype": "Int",
+   "label": "Workout Days"
+  },
+  {
+   "fieldname": "workout_plan_start_date",
+   "fieldtype": "Date",
+   "label": "Workout Plan Start Date"
+  },
+  {
+   "fieldname": "diet_plan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Diet Plan",
+   "options": "\nMuscle Gain\nWeight Loss\nGeneral Fitness"
+  },
+  {
+   "fieldname": "diet_start_date",
+   "fieldtype": "Date",
+   "label": "Diet Start Date"
+  },
+  {
+   "fieldname": "diet_item",
+   "fieldtype": "Table",
+   "label": "Diet Item",
+   "options": "Diet Item"
+  },
+  {
+   "fieldname": "diet_end_date",
+   "fieldtype": "Date",
+   "label": "Diet End Date"
+  },
+  {
+   "fieldname": "supplements_protein_tab",
+   "fieldtype": "Tab Break",
+   "label": "Supplements Protein",
+   "options": "\nMuscle Gain\nWeight Loss\nStrength\nEndurance\nFlexibility\nGeneral Fitness"
+  },
+  {
+   "fieldname": "buy_protein_section",
+   "fieldtype": "Section Break",
+   "label": "Buy Protein"
+  },
+  {
+   "default": "0",
+   "fieldname": "need_protein",
+   "fieldtype": "Check",
+   "label": "Need Protein"
+  },
+  {
+   "fieldname": "protein_items_section",
+   "fieldtype": "Section Break",
+   "label": "Protein Items"
+  },
+  {
+   "depends_on": "eval:doc.need_protein ==1",
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Protein Item"
+  },
+  {
+   "fieldname": "workout_exercise_section",
+   "fieldtype": "Section Break",
+   "label": "Workout Exercise "
+  },
+  {
+   "fieldname": "exercises",
+   "fieldtype": "Table",
+   "label": "Exercises",
+   "options": "Workout Exercise Items"
+  },
+  {
+   "fieldname": "column_break_cruh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "measurement_history_section",
+   "fieldtype": "Section Break",
+   "label": "Measurement History"
+  },
+  {
+   "fieldname": "workout_section",
+   "fieldtype": "Section Break",
+   "label": "Workout "
+  },
+  {
+   "fieldname": "diet_section",
+   "fieldtype": "Section Break",
+   "label": "Diet"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-25 14:34:16.469861",
+ "modified_by": "Administrator",
+ "module": "gym",
+ "name": "Fitness Profile",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
