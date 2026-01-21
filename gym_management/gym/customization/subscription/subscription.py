@@ -15,7 +15,6 @@ def set_subscription_details(subscription, stratdate):
         
     })
 
-
 from frappe.utils import add_days, add_months, add_years
 
 @frappe.whitelist()
@@ -73,7 +72,7 @@ def get_plan_end_date(start_date, subscription_plan):
 #             frappe.msgprint(f"Subscription {doc.name} added to customer's plan history.")
 import frappe
 from frappe.utils import today
-def on_update(doc,method=None):
+def complete_today_subscriptions(doc,method=None):
     subscription = frappe.get_all("Subscription", filters={"status": "Active", "end_date": frappe.utils.today()}, fields=["name", "party", "start_date", "end_date"])
     for sub in subscription:
         sub_doc = frappe.get_doc("Subscription", sub.name)
