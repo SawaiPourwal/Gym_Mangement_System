@@ -11,9 +11,19 @@ class FitnessProfile(Document):
             else:
                 row.amount = 0
 
-
+# protein item ke liye sales invoice function
 @frappe.whitelist()
 def make_sales_invoice(source_name, target_doc=None):
+
+    def postprocess(source, target):
+        for i, row in enumerate(source.items):
+            if not row.item_code:
+                continue
+            item_doc = frappe.get_doc("Item", row.item_code)
+            target_row = target.items[i]
+            target_row.uom = item_doc.stock_uom
+
+
     doc = get_mapped_doc(
         "Fitness Profile",
         source_name,
@@ -26,14 +36,17 @@ def make_sales_invoice(source_name, target_doc=None):
             },
             "Protein Item": {
                 "doctype": "Sales Invoice Item",
-                # "table_fieldname": "items",
                 "field_map": {
-                    "protein_item": "item_code",	
+                    "item_code": "item_code",	
                     "rate": "rate",
-                    "qty": "qty"
+                    "qty": "qty",
+                    "income_account" : "income_account"
+                    
+                    
                 }
             }
         },
-        target_doc
+        target_doc,
+        postprocess=postprocess
     )
     return doc

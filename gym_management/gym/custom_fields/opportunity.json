@@ -2,55 +2,70 @@
  "Opportunity": [
   {
    "dt": "Opportunity",
-   "fieldname": "custom_column_break_sddny",
-   "fieldtype": "Column Break",
-   "insert_after": "source",
+   "fieldname": "custom_address",
+   "fieldtype": "Link",
+   "insert_after": "custom_age",
+   "label": "Address",
+   "module": "gym",
+   "options": "Address"
+  },
+  {
+   "dt": "Opportunity",
+   "fieldname": "custom_interested_plan",
+   "fieldtype": "Link",
+   "insert_after": "custom_interset_plan",
+   "label": "Interested Plan",
+   "module": "gym",
+   "options": "Subscription Plan"
+  },
+  {
+   "dt": "Opportunity",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "insert_after": "custom_medical_issue",
+   "label": "Email",
    "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_column_break_nftv3",
-   "fieldtype": "Column Break",
-   "insert_after": "custom_section_break_zrtvi",
+   "fieldname": "custom_age",
+   "fieldtype": "Int",
+   "insert_after": "email_id",
+   "label": "Age",
    "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_section_break_zrtvi",
-   "fieldtype": "Section Break",
-   "hidden": 1,
-   "insert_after": "naming_series",
+   "fieldname": "custom_mobile_no",
+   "fieldtype": "Data",
+   "insert_after": "custom_address",
+   "label": "Mobile No",
    "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_plan_price",
-   "fieldtype": "Currency",
-   "insert_after": "custom_interested_plan",
-   "label": "Plan Price",
-   "module": "gym"
+   "fieldname": "custom_fitness_goal",
+   "fieldtype": "Select",
+   "insert_after": "probability",
+   "label": "Fitness Goal",
+   "module": "gym",
+   "options": "Weight Loss\nMuscle Gain\nFitness"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_interset_plan",
-   "fieldtype": "Section Break",
-   "insert_after": "contact_info",
-   "label": "Intersted Plan",
-   "module": "gym"
+   "fieldname": "custom_workout_experience",
+   "fieldtype": "Select",
+   "insert_after": "custom_fitness_goal",
+   "label": "Workout Experience",
+   "module": "gym",
+   "options": "Beginner\nIntermediate\nAdvanced"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_persional_info__lead",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_customer__lead_",
-   "label": "Persional Info & Lead",
-   "module": "gym"
-  },
-  {
-   "dt": "Opportunity",
-   "fieldname": "custom_customer__lead_",
-   "fieldtype": "Tab Break",
-   "label": "Customer & Lead ",
+   "fieldname": "custom_medical_issue",
+   "fieldtype": "Check",
+   "insert_after": "custom_preferred_time_slot",
+   "label": "Medical Issue",
    "module": "gym"
   },
   {
@@ -64,71 +79,56 @@
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_medical_issue",
-   "fieldtype": "Check",
-   "insert_after": "custom_preferred_time_slot",
-   "label": "Medical Issue",
+   "fieldname": "custom_customer__lead_",
+   "fieldtype": "Tab Break",
+   "label": "Customer & Lead ",
    "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_workout_experience",
-   "fieldtype": "Select",
-   "insert_after": "custom_fitness_goal",
-   "label": "Workout Experience",
-   "module": "gym",
-   "options": "Beginner\nIntermediate\nAdvanced"
-  },
-  {
-   "dt": "Opportunity",
-   "fieldname": "custom_fitness_goal",
-   "fieldtype": "Select",
-   "insert_after": "probability",
-   "label": "Fitness Goal",
-   "module": "gym",
-   "options": "Weight Loss\nMuscle Gain\nFitness"
-  },
-  {
-   "dt": "Opportunity",
-   "fieldname": "custom_mobile_no",
-   "fieldtype": "Data",
-   "insert_after": "custom_address",
-   "label": "Mobile No",
+   "fieldname": "custom_persional_info__lead",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_customer__lead_",
+   "label": "Persional Info & Lead",
    "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_age",
-   "fieldtype": "Int",
-   "insert_after": "email_id",
-   "label": "Age",
+   "fieldname": "custom_interset_plan",
+   "fieldtype": "Section Break",
+   "insert_after": "contact_info",
+   "label": "Intersted Plan",
    "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "email_id",
-   "fieldtype": "Data",
-   "insert_after": "custom_medical_issue",
-   "label": "Email",
+   "fieldname": "custom_plan_price",
+   "fieldtype": "Currency",
+   "insert_after": "custom_interested_plan",
+   "label": "Plan Price",
    "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_interested_plan",
-   "fieldtype": "Link",
-   "insert_after": "custom_interset_plan",
-   "label": "Interested Plan",
-   "module": "gym",
-   "options": "Subscription Plan"
+   "fieldname": "custom_section_break_zrtvi",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "insert_after": "naming_series",
+   "module": "gym"
   },
   {
    "dt": "Opportunity",
-   "fieldname": "custom_address",
-   "fieldtype": "Link",
-   "insert_after": "custom_age",
-   "label": "Address",
-   "module": "gym",
-   "options": "Address"
+   "fieldname": "custom_column_break_nftv3",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_section_break_zrtvi",
+   "module": "gym"
+  },
+  {
+   "dt": "Opportunity",
+   "fieldname": "custom_column_break_sddny",
+   "fieldtype": "Column Break",
+   "insert_after": "source",
+   "module": "gym"
   }
  ]
 }

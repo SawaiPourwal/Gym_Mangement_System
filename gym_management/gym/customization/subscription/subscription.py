@@ -34,62 +34,79 @@ def get_plan_end_date(start_date, subscription_plan):
 
     elif duration_type == "Month":
         end_date = add_months(start_date, duration)
-        return add_days(end_date, -1)
+        return add_days(end_date, +1)
 
     elif duration_type == "Year":
         end_date = add_years(start_date, duration)
         return add_days(end_date, -1)
     
 # plan histry ke under append customer ka last plan 
-@frappe.whitelist()
-def on_update(doc, method):
-    # frappe.throw('hook called')
-    if doc.status != "Completed":
-        return
+# @frappe.whitelist()
+# def on_update(doc, method=None):
+#     # frappe.throw('hook called')
+#     if doc.status != "Completed":
+#         return
     
         
-    # frappe.throw(f"status  {doc.status}")
-    customer = frappe.get_doc("Customer", doc.party)
-    for row in doc.plans:
-        plan_doc = frappe.get_doc("Subscription Plan", row.plan)
-    for row in customer.custom_plan_histroy:
-        # frappe.throw(f"Checking plan {row.subscription} ")
-        if row.subscription == doc.name:
-            # frappe.throw("Subscription already exists in customer's plan history.")
-            return
-        else:
-            # frappe.throw(f"Subscription {doc.name} already exists in customer's plan history.")
-            customer.append("custom_plan_histroy", {
-                "subscription" : doc.name,
+#     # frappe.throw(f"status  {doc.status}")
+#     customer = frappe.get_doc("Customer", doc.party)   
+#     for row in doc.plans:
+#         plan_doc = frappe.get_doc("Subscription Plan", row.plan)
+#     for row in customer.custom_plan_histroy:
+#         # frappe.throw(f"Checking plan {row.subscription} ")
+#         if row.subscription == doc.name:
+#             # frappe.throw("Subscription already exists in customer's plan history.")
+#             return
+#         else:
+#             # frappe.throw(f"Subscription {doc.name} already exists in customer's plan history.")
+#             customer.append("custom_plan_histroy", {
+#                 "subscription" : doc.name,
                 
 
-                "last_plan" : doc.plans,
-                "start_date" : doc.start_date,
-                "end_date" : doc.end_date,
-                "plan_amount" : plan_doc.cost
+#                 "last_plan" : doc.plans,
+#                 "start_date" : doc.start_date,
+#                 "end_date" : doc.end_date,
+#                 "plan_amount" : plan_doc.cost
                 
 
-            }).save(ignore_permissions=True) 
-            frappe.msgprint(f"Subscription {doc.name} added to customer's plan history.")
+#             }).save(ignore_permissions=True) 
+#             frappe.msgprint(f"Subscription {doc.name} added to customer's plan history.")
+import frappe
+from frappe.utils import today
+def on_update(doc,method=None):
+    subscription = frappe.get_all("Subscription", filters={"status": "Active", "end_date": frappe.utils.today()}, fields=["name", "party", "start_date", "end_date"])
+    for sub in subscription:
+        sub_doc = frappe.get_doc("Subscription", sub.name)
+        sub_doc.status = "Completed"
+        sub_doc.save(ignore_permissions=True)
 
-    
+        customer = frappe.get_doc("Customer", sub_doc.party)
+        # frappe.throw(str(customer.as_dict()))
+        alredy_exists = False
+        for row in customer.custom_plan_histroy:
+            if row.subscription == sub_doc.name:
+                alredy_exists = True
+                break
+        if alredy_exists:
+            continue
+        plan = sub_doc.plans[0]
+        plan_doc = frappe.get_doc("Subscription Plan", plan.plan)
+        customer.append("custom_plan_histroy", {
+            "subscription" : sub_doc.name,
+            "last_plan" : plan.plan,
+            "start_date" : sub_doc.start_date,      
+            "end_date" : sub_doc.end_date,
+            "plan_amount" : plan_doc.cost
+        }).save(ignore_permissions=True) 
+        frappe.msgprint(f"Subscription {sub_doc.name} added to customer's plan history.")
 
-# jab kisi customer ka subscription plan active ho tabhi employee create hona chiye 
-@frappe.whitelist()
-def make_employee(subscription_name):
-    doc = frappe.get_doc("Subscription", subscription_name)
-    if doc.status == "Active":
-        employee = frappe.get_doc({
-            "doctype" : "Employee",
-            "first_name" : doc.party,
-            # "status" : doc.Active
-            
-
-        })
-        employee.insert(ignore_permissions=True)
-        frappe.throw("document crette")
-    
+# # notification send mail
+# def on_update(self,method=None):
+#     # frappe.throw("helloo backend email notification  called")
+#     if self.status == "Active":        
+#         frappe.sendmail(
+#         recipients=[self.custom_email],
+#         subject="Membership Activated",
+#         message=f"Dear {self.party},<br><br>Your membership has been activated from {self.start_date} to {self.end_date}.<br><br>Thank you for choosing our gym!<br><br>Best regards,<br>Gym Management Team"
+#     )
    
-
-        
-    

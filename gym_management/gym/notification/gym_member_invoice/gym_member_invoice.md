@@ -1,12 +1,12 @@
-Hello {{ doc.party }},<br><br>
+<p>Hello {{doc.customer}},<br><br></p>
 
-Your gym membership invoice has been generated.<br><br>
+<p>Your gym membership invoice has been generated.<br><br></p>
 
-<b>Invoice No:</b> {{ doc.name }}<br>
+<p><b>Invoice No:</b> {{ doc.name }}<br>
 <b>Amount:</b> ₹{{ doc.grand_total }}<br>
-<b>Due Date:</b> {{ doc.due_date }}<br><br>
+<b>Due Date:</b> {{ doc.due_date }}<br><br></p>
 
-Please complete the payment to activate your membership.<br><br>
+<p>Please complete the payment to activate your membership.<br><br></p>
 
-Regards,<br>
-Gym Team
+<p>Regards,<br>
+Gym Team</p>

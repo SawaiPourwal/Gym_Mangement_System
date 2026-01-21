@@ -2,20 +2,20 @@
  "Item": [
   {
    "dt": "Item",
+   "fieldname": "custom_duration",
+   "fieldtype": "Int",
+   "insert_after": "stock_uom",
+   "label": "Duration",
+   "module": "gym"
+  },
+  {
+   "dt": "Item",
    "fieldname": "custom_duration_type",
    "fieldtype": "Select",
    "insert_after": "custom_duration",
    "label": "Duration Type",
    "module": "gym",
    "options": "\nDay\nMonth\nYear"
-  },
-  {
-   "dt": "Item",
-   "fieldname": "custom_duration",
-   "fieldtype": "Int",
-   "insert_after": "stock_uom",
-   "label": "Duration",
-   "module": "gym"
   }
  ]
 }

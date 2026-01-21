@@ -18,17 +18,15 @@ def make_subscription(source_name, target_doc=None):
         {
             "Customer": {
                 "doctype" : "Subscription",
-                "field map": {
-                    # "email_id": "custom_email"
-
+                "field_map": {
+                    "customer_primary_contact": "customer_primary_contact"
                 },
             },
-          
-           
         },
         target_doc,
         postprocess=postprocess
     )
+    # frappe.throw(str(doc.as_dict()))
     return doc
 
 @frappe.whitelist()

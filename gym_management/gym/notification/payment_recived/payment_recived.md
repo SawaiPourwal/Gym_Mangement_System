@@ -1,12 +1,12 @@
-Hello {{ doc.party}},
+<p>Hello {{ doc.party}},</p>
 
-We have successfully received your payment.
+<p>We have successfully received your payment.</p>
 
-Payment Reference: {{ doc.name }}
+<p>Payment Reference: {{ doc.name }}
 Amount Paid: ₹{{ doc.paid_amount }}
-Payment Date: {{ doc.posting_date }}
+Payment Date: {{ doc.posting_date }}</p>
 
-Thank you for your payment. Your gym membership is now confirmed.
+<p>Thank you for your payment. Your gym membership is now confirmed.</p>
 
-Regards,
-Gym Team
+<p>Regards,
+Gym Team</p>

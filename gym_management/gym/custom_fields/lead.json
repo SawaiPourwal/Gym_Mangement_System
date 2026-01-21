@@ -2,13 +2,6 @@
  "Lead": [
   {
    "dt": "Lead",
-   "fieldname": "custom_column_break_fvgiq",
-   "fieldtype": "Column Break",
-   "insert_after": "website",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
    "fieldname": "whatsapp",
    "fieldtype": "Phone",
    "hidden": 1,
@@ -18,220 +11,7 @@
   },
   {
    "dt": "Lead",
-   "fieldname": "custom_interested_plan",
-   "fieldtype": "Link",
-   "insert_after": "custom_workout_experience",
-   "label": "Interested Plan",
-   "module": "gym",
-   "options": "Subscription Plan"
-  },
-  {
-   "depends_on": "eval:doc.custom_trial_required==1",
-   "dt": "Lead",
-   "fieldname": "custom_trial_trainer",
-   "fieldtype": "Link",
-   "insert_after": "custom_trail_type",
-   "label": "Trial Trainer",
-   "module": "gym",
-   "options": "Employee"
-  },
-  {
-   "depends_on": "eval:doc.custom_trial_required==1",
-   "dt": "Lead",
-   "fieldname": "custom_trail_type",
-   "fieldtype": "Select",
-   "insert_after": "custom_column_break_qhobo",
-   "label": "Tral Days",
-   "module": "gym",
-   "options": "\n1 Day\n2 Day\n3 Day"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_date_of_birth",
-   "fieldtype": "Date",
-   "insert_after": "gender",
-   "label": "Date of Birth",
-   "module": "gym"
-  },
-  {
-   "depends_on": "eval:doc.custom_medical_issue==1",
-   "dt": "Lead",
-   "fieldname": "custom_doctor_advicenotes",
-   "fieldtype": "Small Text",
-   "insert_after": "custom_injury_history",
-   "label": "Doctor Advice/Notes",
-   "module": "gym"
-  },
-  {
-   "depends_on": "eval:doc.custom_medical_issue==1",
-   "dt": "Lead",
-   "fieldname": "custom_injury_history",
-   "fieldtype": "Small Text",
-   "insert_after": "custom_medical_condition",
-   "label": "Injury History",
-   "module": "gym"
-  },
-  {
-   "depends_on": "eval:doc.custom_medical_issue==1",
-   "dt": "Lead",
-   "fieldname": "custom_medical_condition",
-   "fieldtype": "Select",
-   "insert_after": "custom_medical_issue",
-   "label": "Medical Condition",
-   "module": "gym",
-   "options": "\nBP\nDiabetes\nHeart Problem\nAsthma\nThyroid\nBack Pain\nKnee Pain\nOther"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_medical_issue",
-   "fieldtype": "Check",
-   "insert_after": "custom_medical_info",
-   "label": "Medical Issue",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_medical_info",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_medical__safety",
-   "label": "Medical Info",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_medical__safety",
-   "fieldtype": "Tab Break",
-   "insert_after": "custom_trial_trainer",
-   "label": "Medical & Safety",
-   "module": "gym"
-  },
-  {
-   "depends_on": "eval:doc.custom_trial_required == 1 &&  doc.custom_trail_type ",
-   "dt": "Lead",
-   "fieldname": "custom_trial_end_date",
-   "fieldtype": "Date",
-   "insert_after": "custom_trial_start_date",
-   "label": "Trial End Date",
-   "module": "gym"
-  },
-  {
-   "depends_on": "eval:doc.custom_trial_required == 1 &&  doc.custom_trail_type != \"\"\n",
-   "dt": "Lead",
-   "fieldname": "custom_trial_start_date",
-   "fieldtype": "Date",
-   "insert_after": "custom_trial_required",
-   "label": "Trial Start Date",
-   "module": "gym"
-  },
-  {
-   "depends_on": "eval:doc.custom_trial_required==1",
-   "dt": "Lead",
-   "fieldname": "custom_trial_feedback",
-   "fieldtype": "Small Text",
-   "insert_after": "custom_trial_end_date",
-   "label": "Trial Feedback",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_column_break_qhobo",
-   "fieldtype": "Column Break",
-   "insert_after": "custom_trial_feedback",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_trial_required",
-   "fieldtype": "Check",
-   "insert_after": "custom_trial_details",
-   "label": "Trial Required",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_trial_details",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_trial_demo",
-   "label": "Trial Details",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_trial_demo",
-   "fieldtype": "Tab Break",
-   "insert_after": "column_break_20",
-   "label": "Trial Demo",
-   "module": "gym"
-  },
-  {
-   "depends_on": "eval:doc.custom_interested_plan ",
-   "dt": "Lead",
-   "fetch_from": "custom_interested_plan.cost",
-   "fieldname": "custom_plan_price",
-   "fieldtype": "Currency",
-   "insert_after": "custom_interested_plan",
-   "label": "Plan Price",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_column_break_bmxvr",
-   "fieldtype": "Column Break",
-   "insert_after": "phone_ext",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_fitness_interested",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_plan_price",
-   "label": "Fitness Interested",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_lead_source__fitness_interest",
-   "fieldtype": "Tab Break",
-   "insert_after": "blog_subscriber",
-   "label": "Lead Source & Fitness Interest",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_personal_details__contact",
-   "fieldtype": "Tab Break",
-   "label": "Personal Details & Contact",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_persnal_details",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_personal_details__contact",
-   "label": "Persnal Info",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_section_break_zkug0",
-   "fieldtype": "Section Break",
-   "hidden": 1,
-   "insert_after": "activities_tab",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fetch_from": "customer.custom_workout_experience",
-   "fieldname": "custom_workout_experience",
-   "fieldtype": "Select",
-   "insert_after": "custom_fitness_goal",
-   "label": "Workout Experience",
-   "module": "gym",
-   "options": "\nBeginner\nIntermediate\nAdvanced"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_address",
+   "fieldname": "customer_address",
    "fieldtype": "Link",
    "insert_after": "email_id",
    "label": "Address",
@@ -240,39 +20,21 @@
   },
   {
    "dt": "Lead",
-   "fetch_from": "customer.custom_preferred_time_slot",
-   "fieldname": "custom_preferred_time_slot",
+   "fetch_from": "customer.custom_fitness_goal",
+   "fieldname": "custom_fitness_goal",
    "fieldtype": "Select",
-   "insert_after": "custom_inquiry_date_",
-   "label": "Preferred Time Slot",
+   "insert_after": "custom_column_break_fvgiq",
+   "label": "Fitness Goal",
    "module": "gym",
-   "options": "\nMorning\nAfternoon\nEvening\nFlexible"
+   "options": "\nWeight Loss\nMuscle Gain\nFitness"
   },
   {
    "dt": "Lead",
-   "fetch_from": "customer.custom_refrred_by",
-   "fieldname": "custom_refrred_by",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "insert_after": "source",
-   "label": "Refrred By",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fetch_from": "customer.custom_age",
-   "fieldname": "custom_age",
-   "fieldtype": "Int",
-   "insert_after": "custom_date_of_birth",
-   "label": "Age",
-   "module": "gym"
-  },
-  {
-   "dt": "Lead",
-   "fieldname": "custom_column_break_fyfhr",
-   "fieldtype": "Column Break",
-   "hidden": 1,
-   "insert_after": "address_section",
+   "fetch_from": "customer.custom_inquiry_date_",
+   "fieldname": "custom_inquiry_date_",
+   "fieldtype": "Date",
+   "insert_after": "contact_info_tab",
+   "label": "Inquiry Date ",
    "module": "gym"
   },
   {
@@ -288,22 +50,260 @@
   },
   {
    "dt": "Lead",
-   "fetch_from": "customer.custom_inquiry_date_",
-   "fieldname": "custom_inquiry_date_",
-   "fieldtype": "Date",
-   "insert_after": "contact_info_tab",
-   "label": "Inquiry Date ",
+   "fieldname": "custom_column_break_fyfhr",
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "insert_after": "address_section",
    "module": "gym"
   },
   {
    "dt": "Lead",
-   "fetch_from": "customer.custom_fitness_goal",
-   "fieldname": "custom_fitness_goal",
+   "fetch_from": "customer.custom_age",
+   "fieldname": "custom_age",
+   "fieldtype": "Int",
+   "insert_after": "custom_date_of_birth",
+   "label": "Age",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fetch_from": "customer.custom_refrred_by",
+   "fieldname": "custom_refrred_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "insert_after": "source",
+   "label": "Refrred By",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fetch_from": "customer.custom_preferred_time_slot",
+   "fieldname": "custom_preferred_time_slot",
    "fieldtype": "Select",
-   "insert_after": "custom_column_break_fvgiq",
-   "label": "Fitness Goal",
+   "insert_after": "custom_inquiry_date_",
+   "label": "Preferred Time Slot",
    "module": "gym",
-   "options": "\nWeight Loss\nMuscle Gain\nFitness"
+   "options": "\nMorning\nAfternoon\nEvening\nFlexible"
+  },
+  {
+   "dt": "Lead",
+   "fetch_from": "customer.custom_workout_experience",
+   "fieldname": "custom_workout_experience",
+   "fieldtype": "Select",
+   "insert_after": "custom_fitness_goal",
+   "label": "Workout Experience",
+   "module": "gym",
+   "options": "\nBeginner\nIntermediate\nAdvanced"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_section_break_zkug0",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "insert_after": "activities_tab",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_persnal_details",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_personal_details__contact",
+   "label": "Persnal Info",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_personal_details__contact",
+   "fieldtype": "Tab Break",
+   "label": "Personal Details & Contact",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_lead_source__fitness_interest",
+   "fieldtype": "Tab Break",
+   "insert_after": "blog_subscriber",
+   "label": "Lead Source & Fitness Interest",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_fitness_interested",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_plan_price",
+   "label": "Fitness Interested",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_column_break_bmxvr",
+   "fieldtype": "Column Break",
+   "insert_after": "phone_ext",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_interested_plan ",
+   "dt": "Lead",
+   "fetch_from": "custom_interested_plan.cost",
+   "fieldname": "custom_plan_price",
+   "fieldtype": "Currency",
+   "insert_after": "custom_interested_plan",
+   "label": "Plan Price",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_trial_demo",
+   "fieldtype": "Tab Break",
+   "insert_after": "column_break_20",
+   "label": "Trial Demo",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_trial_details",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_trial_demo",
+   "label": "Trial Details",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_trial_required",
+   "fieldtype": "Check",
+   "insert_after": "custom_trial_details",
+   "label": "Trial Required",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_column_break_qhobo",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_trial_feedback",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_trial_required==1",
+   "dt": "Lead",
+   "fieldname": "custom_trial_feedback",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_trial_end_date",
+   "label": "Trial Feedback",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_trial_required == 1 &&  doc.custom_trail_type != \"\"\n",
+   "dt": "Lead",
+   "fieldname": "custom_trial_start_date",
+   "fieldtype": "Date",
+   "insert_after": "custom_trial_required",
+   "label": "Trial Start Date",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_trial_required == 1 &&  doc.custom_trail_type ",
+   "dt": "Lead",
+   "fieldname": "custom_trial_end_date",
+   "fieldtype": "Date",
+   "insert_after": "custom_trial_start_date",
+   "label": "Trial End Date",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_medical__safety",
+   "fieldtype": "Tab Break",
+   "insert_after": "custom_trial_trainer",
+   "label": "Medical & Safety",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_medical_info",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_medical__safety",
+   "label": "Medical Info",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_medical_issue",
+   "fieldtype": "Check",
+   "insert_after": "custom_medical_info",
+   "label": "Medical Issue",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_medical_issue==1",
+   "dt": "Lead",
+   "fieldname": "custom_medical_condition",
+   "fieldtype": "Select",
+   "insert_after": "custom_medical_issue",
+   "label": "Medical Condition",
+   "module": "gym",
+   "options": "\nBP\nDiabetes\nHeart Problem\nAsthma\nThyroid\nBack Pain\nKnee Pain\nOther"
+  },
+  {
+   "depends_on": "eval:doc.custom_medical_issue==1",
+   "dt": "Lead",
+   "fieldname": "custom_injury_history",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_medical_condition",
+   "label": "Injury History",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_medical_issue==1",
+   "dt": "Lead",
+   "fieldname": "custom_doctor_advicenotes",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_injury_history",
+   "label": "Doctor Advice/Notes",
+   "module": "gym"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_date_of_birth",
+   "fieldtype": "Date",
+   "insert_after": "gender",
+   "label": "Date of Birth",
+   "module": "gym"
+  },
+  {
+   "depends_on": "eval:doc.custom_trial_required==1",
+   "dt": "Lead",
+   "fieldname": "custom_trail_type",
+   "fieldtype": "Select",
+   "insert_after": "custom_column_break_qhobo",
+   "label": "Tral Days",
+   "module": "gym",
+   "options": "\n1 Day\n2 Day\n3 Day"
+  },
+  {
+   "depends_on": "eval:doc.custom_trial_required==1",
+   "dt": "Lead",
+   "fieldname": "custom_trial_trainer",
+   "fieldtype": "Link",
+   "insert_after": "custom_trail_type",
+   "label": "Trial Trainer",
+   "module": "gym",
+   "options": "Employee"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_interested_plan",
+   "fieldtype": "Link",
+   "insert_after": "custom_workout_experience",
+   "label": "Interested Plan",
+   "module": "gym",
+   "options": "Subscription Plan"
+  },
+  {
+   "dt": "Lead",
+   "fieldname": "custom_column_break_fvgiq",
+   "fieldtype": "Column Break",
+   "insert_after": "website",
+   "module": "gym"
   }
  ]
 }

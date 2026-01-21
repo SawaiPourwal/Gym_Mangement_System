@@ -47,16 +47,3 @@ function calculate_end_date(frm) {
         }
     });
 }
-// frappe.ui.form.on("Subscription",{
-//     refresh: function(frm){
-//         console.log("::::LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL")
-
-//         frappe.call({
-//             method: "gym_management.gym.customization.subscription.subscription.make_employee",
-//             args: {
-//                 subscription_name : frm.doc.name
-
-//             }
-//         })
-//     } 
-// });

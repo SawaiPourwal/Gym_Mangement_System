@@ -7,7 +7,9 @@ app_license = "mit"
 
 # Apps
 # ------------------
-after_migrate = "gym_management.migrate.after_migrate"
+after_migrate = [
+     "gym_management.migrate.after_migrate",
+]
 fixtures=["Translation"]
 # required_apps = []
 
@@ -162,23 +164,24 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"gym_management.tasks.all"
-# 	],
-# 	"daily": [
-# 		"gym_management.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"gym_management.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"gym_management.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"gym_management.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"gym_management.tasks.all"
+	# ],
+	"daily": [
+		"gym_management.gym.customization.subscription.subscription.complete_today_subscriptions"
+	],
+
+	# "hourly": [
+	# 	"gym_management.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"gym_management.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"gym_management.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------
