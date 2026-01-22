@@ -1,0 +1,103 @@
+{
+ "charts": [
+  {
+   "chart_name": "Active Customer",
+   "label": "Active Customer"
+  }
+ ],
+ "content": "[{\"id\":\"Z-0uwND-7Y\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"gym management\",\"col\":12}},{\"id\":\"kxj1sIluga\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Active Customer\",\"col\":12}},{\"id\":\"xhzHMFS4Id\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Masters</span>\",\"col\":12}},{\"id\":\"12IGc8JKNZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Enquiry\",\"col\":3}},{\"id\":\"-gtcMojz74\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Customer\",\"col\":3}},{\"id\":\"aAUPXEz8JB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Subscription\",\"col\":3}},{\"id\":\"J3T1PZIQQu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fitness Profile\",\"col\":3}},{\"id\":\"YYaH0AFu7f\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trainer\",\"col\":3}},{\"id\":\"1hkwReBo2f\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Payment \",\"col\":3}},{\"id\":\"mqNR_8PIBS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Info Board\",\"col\":3}},{\"id\":\"y-145oiyPT\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Reports</span>\",\"col\":12}},{\"id\":\"_IqmpwPfWl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Customer Active\",\"col\":3}}]",
+ "creation": "2026-01-01 12:19:23.134020",
+ "custom_blocks": [
+  {
+   "custom_block_name": "gym management",
+   "label": "gym management"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Gym Management",
+ "links": [],
+ "modified": "2026-01-22 13:59:22.455277",
+ "modified_by": "Administrator",
+ "module": "gym",
+ "name": "Gym Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Info Board",
+   "link_to": "Info Board",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "New Enquiry",
+   "link_to": "Lead",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "New Customer",
+   "link_to": "Customer Group",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Customer Active",
+   "link_to": "All Customer Active",
+   "report_ref_doctype": "Subscription",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Fitness Profile",
+   "link_to": "Fitness Profile",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "New Subscription",
+   "link_to": "Subscription",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Trainer",
+   "link_to": "Employee",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "New Payment ",
+   "link_to": "Payment Entry",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Gym Management"
+}

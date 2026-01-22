@@ -16,7 +16,6 @@ def set_subscription_details(subscription, stratdate):
     })
 
 from frappe.utils import add_days, add_months, add_years
-
 @frappe.whitelist()
 def get_plan_end_date(start_date, subscription_plan):
 
