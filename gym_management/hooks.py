@@ -10,7 +10,7 @@ app_license = "mit"
 after_migrate = [
      "gym_management.migrate.after_migrate",
 ]
-fixtures=["Translation"]
+fixtures=["Custom HTML Block","Translation"]
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page

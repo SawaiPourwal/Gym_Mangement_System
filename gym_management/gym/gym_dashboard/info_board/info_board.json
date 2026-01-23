@@ -1,30 +1,56 @@
 {
  "cards": [
   {
-   "card": "Card One"
+   "card": "Active Customers"
   },
   {
-   "card": "Total Members"
+   "card": "Total Customers"
+  },
+  {
+   "card": "Today\u2019s Enquiry"
+  },
+  {
+   "card": "Today's Joining"
+  },
+  {
+   "card": "Inactive Customers"
+  },
+  {
+   "card": "This Month Collection"
+  },
+  {
+   "card": "Pending Payments"
+  },
+  {
+   "card": "Expiring Months"
   }
  ],
  "charts": [
   {
-   "chart": "Diets plan",
+   "chart": "Plan Wise Active Members",
    "width": "Half"
   },
   {
-   "chart": "Monthly New Member",
+   "chart": "Active Customer",
+   "width": "Half"
+  },
+  {
+   "chart": "Monthly Joining",
+   "width": "Half"
+  },
+  {
+   "chart": "Expiry Plan Trend",
    "width": "Half"
   }
  ],
- "creation": "2025-12-31 15:09:50.320035",
+ "creation": "2026-01-01 12:15:11.202830",
  "dashboard_name": "Info Board",
  "docstatus": 0,
  "doctype": "Dashboard",
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2025-12-31 15:09:50.320035",
+ "modified": "2026-01-22 14:49:25.154132",
  "modified_by": "Administrator",
  "module": "gym",
  "name": "Info Board",

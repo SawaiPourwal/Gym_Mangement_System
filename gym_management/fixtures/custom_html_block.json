@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<html>\n    <head>\n        \n    </head>\n        <body>\n            <h3 style=\"text-align:center\">Gym Management</h3>\n        </body>\n    \n</html>",
+  "modified": "2026-01-01 16:27:37.425179",
+  "name": "gym management",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ }
+]
